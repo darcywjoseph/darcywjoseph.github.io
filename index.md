@@ -28,7 +28,8 @@ Hi! I am a fifth-year undergraduate student at the University of Adelaide (Austr
 
 **Machine Learning Intern** (Adelaide, SA | 2024) <br/>
 *Swordfish Computing*
-- Literature review of SOTA techniques for 3D synthetic dataset generation.
+- Literature review and subsequent implementation of SOTA techniques for 3D synthetic dataset generation - Video-To-Video Diffusion, 3d Gaussian Splatting.
+- Development of microservices within an UnReal Engine software pipeline
 
 **Undergraduate Electronics Intern** (Adelaide, SA | 2021-22) <br/>
 *Flux Robotics*
