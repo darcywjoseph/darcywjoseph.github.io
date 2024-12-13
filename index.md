@@ -38,6 +38,9 @@ Hi! I am a fifth-year undergraduate student at the University of Adelaide (Austr
 
 ## Honours + Awards
 
+Defence Industry Internship Program (DIIP) - scholarship award to high achieving students for placement within the Australian Defence Industry
+
+University of Adelaide Principles Scholarship - awarded to the highest graduating ATAR attending UoA
 
 
 ## Technical Skills
