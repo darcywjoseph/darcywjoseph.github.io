@@ -1,10 +1,12 @@
 title: Darcy Joseph # your name (or website title) here
-logo: <"/images/darcyCircle.png?raw=true" # your photo (or logo) here
+logo: "/images/darcyCircle.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   5th Year Undergraduate<br/>
   University of Adelaide (Adl, Australia)
   <br/>
-  B.Eng (Electrical & Electronic) + BMaCompSci (Computer Science) 
+  B.Eng (Electrical & Electronic)
+  <br/>
+  BMaCompSci (Computer Science) 
   <br/><br/>
   <a href="https://www.linkedin.com/in/darcy-joseph-5293031a5/">LinkedIn</a> 
   
