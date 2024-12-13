@@ -41,7 +41,7 @@ Hi! I am a fifth-year undergraduate student at the University of Adelaide (Austr
 
 ## Honours + Awards
 
-*2024 Aisa-Pacific Microwave Conference (APMC) [Invited] - Terahertz Waves for Sensing Acoustic Vibrations. Harrison Lees, **Darcy Joseph**, Yuval Yarom, and Withawat Withayachumnankul
+**2024 Aisa-Pacific Microwave Conference (APMC) [Invited]** - 'Terahertz Waves for Sensing Acoustic Vibrations' by Harrison Lees, **Darcy Joseph**, Yuval Yarom, and Withawat Withayachumnankul
 
 **Defence Industry Internship Program (DIIP)** - scholarship award to high achieving students for placement within the Australian Defence Industry
 
