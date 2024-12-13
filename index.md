@@ -1,4 +1,4 @@
-Hi! I am a fifth-year undergraduate student at the University of Adelaide (Australia) pursuing a B.Eng (Hons) in Electrical + Electronic and a BMaCompSci. in Computer Science. 
+Hi! I am a fifth-year undergraduate student at the University of Adelaide (Australia) pursuing a B.Eng (Hons) in Electrical + Electronic Engineering and a BMaCompSci. in Computer Science. 
 
 ## Education
 
@@ -26,7 +26,12 @@ Hi! I am a fifth-year undergraduate student at the University of Adelaide (Austr
 
 ## Work Experience
 
-
+**Undergraduate Electronics Intern** (Adelaide, SA | 2021-22) <br/>
+*Flux Robotics*
+- Implementing Yolov7 for detection of weeds and subsequent spraying/removing within an agricultural content.
+- Designed remotely controlled electric drive train using PID control of BLDC motors via a ROD interface
+- Constructed and implemented a Differential GNSS system in parallel with an Extended Kalman Filter to allow autonomous navigation for precision agriculture
+- Designed CANBus messaging system allowing peripheral sensors to communicate with a central processing unit.
 
 
 ---
