@@ -1,11 +1,11 @@
 title: Darcy Joseph # your name (or website title) here
-logo: "/images/logo.png?raw=true" # your photo (or logo) here
+logo: "/images/darcy.jpg?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  5th Year Undergraduate
+  University of Adelaide (Adl, Australia)
+  B.Eng (Electrical & Electronic) + BMaCompSci (Computer Science) 
   <br><br>
-  Second description 
-  <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/darcy-joseph-5293031a5/">LinkedIn</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
