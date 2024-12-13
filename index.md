@@ -26,6 +26,10 @@ Hi! I am a fifth-year undergraduate student at the University of Adelaide (Austr
 
 ## Work Experience
 
+**Machine Learning Intern** (Adelaide, SA | 2024) <br/>
+*Swordfish Computing*
+- Literature review of SOTA techniques for 3D synthetic dataset generation.
+
 **Undergraduate Electronics Intern** (Adelaide, SA | 2021-22) <br/>
 *Flux Robotics*
 - Implementing Yolov7 for detection of weeds and subsequent spraying/removing within an agricultural content.
@@ -33,14 +37,15 @@ Hi! I am a fifth-year undergraduate student at the University of Adelaide (Austr
 - Constructed and implemented a Differential GNSS system in parallel with an Extended Kalman Filter to allow autonomous navigation for precision agriculture
 - Designed CANBus messaging system allowing peripheral sensors to communicate with a central processing unit.
 
-
 ---
 
 ## Honours + Awards
 
-Defence Industry Internship Program (DIIP) - scholarship award to high achieving students for placement within the Australian Defence Industry
+*2024 Aisa-Pacific Microwave Conference (APMC) [Invited] - Terahertz Waves for Sensing Acoustic Vibrations. Harrison Lees, **Darcy Joseph**, Yuval Yarom, and Withawat Withayachumnankul
 
-University of Adelaide Principles Scholarship - awarded to the highest graduating ATAR attending UoA
+**Defence Industry Internship Program (DIIP)** - scholarship award to high achieving students for placement within the Australian Defence Industry
+
+**University of Adelaide Principles Scholarship** - awarded to the highest graduating ATAR attending UoA
 
 
 ## Technical Skills
