@@ -2,7 +2,7 @@
 
 ## Education
 
-**University of Adelaide** (Feb 2019 - Jun 2025) [Last 2yr GPA: 6.28]
+**University of Adelaide** (Feb 2019 - Jun 2025) [Last 12 Credits GPA: 6.25]
 - Bachelor of Engineering (Hons) (Electrical & Electronic)
 - Bachelor of Mathematical and Computer Science (Comp Sci)
 
