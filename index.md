@@ -1,6 +1,4 @@
-##### Hi! I am a **Machine Learning Engineer** at Swordfish Computing in Adelaide, Australia, mainly working on computer vision models applied in defence and agriculture. <br/> I hold a B.Eng (Hons) in Electrical & Electronic Engineering and a BMaCompSci in Computer Science from the University of Adelaide.<br/><br/>
-
-My research interests are in **world models**, **causal representation learning**, and **self-supervised learning**. I want to develop intelligence that learns the causal mechanisms of an environment and apply this toward scientific disocvery.
+##### Hi! I am a **Machine Learning Engineer** at Swordfish Computing in Adelaide, Australia, mainly working on computer vision models applied in defence and agriculture. <br/> I hold a B.Eng (Hons) in Electrical & Electronic Engineering and a BMaCompSci in Computer Science from the University of Adelaide.<br/><br/>My research interests are in **world models**, **causal representation learning**, and **self-supervised learning**. I want to develop intelligence that learns the causal mechanisms of an environment and apply this toward scientific disocvery.
 
 ## Experience
 
