@@ -10,7 +10,11 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br/>
   University of Adelaide
   <br/><br/>
-  <a href="https://www.linkedin.com/in/darcy-joseph-5293031a5/">LinkedIn</a> 
+  <a href="https://www.linkedin.com/in/darcy-joseph-5293031a5/">LinkedIn</a>
+  &middot;
+  <a href="https://github.com/darcywjoseph">GitHub</a>
+  &middot;
+  <a href="https://scholar.google.com/citations?user=-2OE2FoAAAAJ&amp;hl=en">Scholar</a>
   
 github:
   is_project_page: false
