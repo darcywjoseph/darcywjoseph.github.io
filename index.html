@@ -30,6 +30,9 @@
   --accent-dark: #0f4c5c;
   --accent-tint: rgba(22, 105, 122, 0.09);
   --tag-bg:      #eef3f5;
+  --link:        #2563eb;
+  --link-hover:  #1d4ed8;
+  --link-tint:   rgba(37, 99, 235, 0.09);
 
   --sans:  'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --serif: 'Source Serif 4', Iowan Old Style, Georgia, serif;
@@ -218,6 +221,20 @@ img { max-width: 100%; height: auto; display: block; }
 .entry ul { margin: 8px 0 0; padding-left: 19px; }
 .entry li { margin-bottom: 4px; color: var(--ink-soft); }
 
+/* Entry with an organisation logo alongside */
+.entry-logo {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.org-logo {
+  width: 62px;
+  height: auto;
+  margin-top: 2px;
+}
+.entry-logo .entry-body { min-width: 0; }
+
 /* Publications */
 .pub { margin-bottom: 22px; }
 .pub-title { font-weight: 600; color: var(--ink); }
@@ -236,21 +253,29 @@ img { max-width: 100%; height: auto; display: block; }
   margin-left: 6px;
 }
 
-/* Awards / skills */
-.award { margin-bottom: 14px; }
-.award-name { font-weight: 600; color: var(--ink); }
-.award-note { font-size: 14.5px; color: var(--ink-muted); }
-
-.skills-row { margin-bottom: 18px; }
-.skills-label {
+.pub-links { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 8px; }
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  color: var(--ink-faded);
-  margin-bottom: 7px;
+  font-weight: 500;
+  letter-spacing: .01em;
+  color: var(--link);
+  background: var(--link-tint);
+  transition: all .15s ease;
 }
-.skills-row .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+.pub-links a:hover {
+  background: var(--link);
+  border-color: var(--link);
+  color: #fff;
+}
+
+/* Miscellaneous entries */
+.misc-text { margin: 0 0 14px; color: var(--ink-soft); }
 
 /* ---------- Footer ---------- */
 footer {
@@ -276,6 +301,8 @@ footer {
   .avatar { width: 120px; height: 120px; }
   .header h1 { font-size: 33px; }
   .entry-head { flex-direction: column; gap: 2px; }
+  .entry-logo { grid-template-columns: 46px 1fr; gap: 14px; }
+  .org-logo { width: 46px; }
   .entry-date { white-space: normal; }
   .tabs { gap: 0; }
   .tab-btn { padding: 9px 11px; font-size: 14px; }
@@ -323,24 +350,20 @@ footer {
 
   <section class="bio">
     <p>
-      I am a <strong>Machine Learning Engineer</strong> at Swordfish Computing, mainly working on
-      computer vision models applied in defence and agriculture. I hold a B.Eng (Hons) in Electrical
-      &amp; Electronic Engineering and a BMaCompSci in Computer Science from the University of Adelaide.
+      I'm a Machine Learning Engineer working on computer vision models applied in defence and agriculture.
+    <p>      
+    Previously I studied EE and CS at the University of Adelaide (now Adelaide University).
     </p>
     <p>
       My research interests are in <strong>world models</strong>, <strong>causal representation
       learning</strong>, and <strong>self-supervised learning</strong>. I want to develop intelligence
       that learns the causal mechanisms of an environment and apply this toward scientific discovery.
     </p>
-    <p>
-      Outside of work I enjoy running, football and surfing.
-    </p>
     <div class="interests">
       <span class="label">Interests</span>
-      <span class="tag">World models</span>
-      <span class="tag">Causal representation learning</span>
-      <span class="tag">Self-supervised learning</span>
-      <span class="tag">Computer vision</span>
+      <span class="tag">World Models</span>
+      <span class="tag">AI for Science</span>
+      <span class="tag">Causal Representation Learning</span>
     </div>
   </section>
 
@@ -348,8 +371,7 @@ footer {
     <button class="tab-btn active" data-tab="experience" role="tab" aria-selected="true"  aria-controls="experience">Experience</button>
     <button class="tab-btn"        data-tab="research"   role="tab" aria-selected="false" aria-controls="research">Research</button>
     <button class="tab-btn"        data-tab="education"  role="tab" aria-selected="false" aria-controls="education">Education</button>
-    <button class="tab-btn"        data-tab="awards"     role="tab" aria-selected="false" aria-controls="awards">Honours &amp; Awards</button>
-    <button class="tab-btn"        data-tab="skills"     role="tab" aria-selected="false" aria-controls="skills">Skills</button>
+    <button class="tab-btn"        data-tab="misc"       role="tab" aria-selected="false" aria-controls="misc">Miscellaneous</button>
   </nav>
 
   <div class="tab-pane active" id="experience" role="tabpanel" tabindex="0">
@@ -381,6 +403,9 @@ footer {
       <div class="pub-title">Investigating Adversarial Robustness against Preprocessing used in Blackbox Face Recognition</div>
       <div class="pub-authors">Roland Croft, Brian Du, <span class="me">Darcy Joseph</span>, Sharath Kumar</div>
       <div class="pub-venue">Digital Image Computing: Techniques and Applications (DICTA), 2025</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2510.17169" target="_blank" rel="noopener">arXiv</a>
+      </div>
     </div>
 
     <div class="pub">
@@ -391,64 +416,28 @@ footer {
   </div>
 
   <div class="tab-pane" id="education" role="tabpanel" tabindex="0">
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">University of Adelaide</span>
-        <span class="entry-date">Feb 2019 &ndash; Jun 2025</span>
+    <div class="entry entry-logo">
+      <img class="org-logo" src="images/adelaide-logo.svg" alt="University of Adelaide" />
+      <div class="entry-body">
+        <div class="entry-head">
+          <span class="entry-title">University of Adelaide</span>
+          <span class="entry-date">Feb 2019 &ndash; Jun 2025</span>
+        </div>
+        <div class="entry-org">Adelaide, SA <span class="place">&middot; Last 2-year GPA: 6.25/7</span></div>
+        <ul>
+          <li>Bachelor of Engineering (Hons), Electrical &amp; Electronic</li>
+          <li>Bachelor of Mathematical and Computer Science, Computer Science</li>
+        </ul>
       </div>
-      <div class="entry-org">Adelaide, SA <span class="place">&middot; Last 2-year GPA: 6.25</span></div>
-      <ul>
-        <li>Bachelor of Engineering (Hons), Electrical &amp; Electronic</li>
-        <li>Bachelor of Mathematical and Computer Science, Computer Science</li>
-      </ul>
     </div>
   </div>
 
-  <div class="tab-pane" id="awards" role="tabpanel" tabindex="0">
-    <div class="award">
-      <div class="award-name">Defence Industry Cooperative Program (DICP) Scholarship</div>
-    </div>
-    <div class="award">
-      <div class="award-name">University of Adelaide Principals Scholarship</div>
-    </div>
-  </div>
-
-  <div class="tab-pane" id="skills" role="tabpanel" tabindex="0">
-    <div class="skills-row">
-      <div class="skills-label">AI &amp; ML</div>
-      <div class="tags">
-        <span class="tag">PyTorch</span><span class="tag">CUDA</span>
-        <span class="tag">Vision Transformers (ViT)</span><span class="tag">Self-supervised learning</span>
-        <span class="tag">CNNs</span><span class="tag">Metric learning</span>
-        <span class="tag">Face recognition &amp; verification</span><span class="tag">Adversarial ML</span>
-        <span class="tag">GANs</span><span class="tag">VAEs</span>
-        <span class="tag">3D vision</span><span class="tag">LoRA</span>
-        <span class="tag">Segmentation</span><span class="tag">Pose estimation</span>
-      </div>
-    </div>
-    <div class="skills-row">
-      <div class="skills-label">Software</div>
-      <div class="tags">
-        <span class="tag">Python</span><span class="tag">C++</span>
-        <span class="tag">DeepStream</span><span class="tag">GStreamer</span>
-        <span class="tag">RTSP</span><span class="tag">TensorRT</span>
-        <span class="tag">Git</span><span class="tag">Docker</span>
-      </div>
-    </div>
-    <div class="skills-row">
-      <div class="skills-label">Electronics</div>
-      <div class="tags">
-        <span class="tag">ArduPilot</span><span class="tag">MAVLink</span>
-        <span class="tag">Pixhawk</span><span class="tag">BLDC motor control</span>
-        <span class="tag">ROS2</span><span class="tag">State estimation (KF, particle filters)</span>
-        <span class="tag">EO / radar / IR sensors</span><span class="tag">GNSS for guidance</span>
-        <span class="tag">NVIDIA Jetson</span>
-      </div>
-    </div>
+  <div class="tab-pane" id="misc" role="tabpanel" tabindex="0">
+    <p class="misc-text">Running, football and surfing.</p>
   </div>
 
   <footer>
-    &copy; Darcy Joseph &middot; Built with GitHub Pages
+    &copy; 2026 Darcy Joseph
   </footer>
 
 </div>
