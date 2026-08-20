@@ -1,0 +1,37 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+/* Collapsible sections: style <summary> to read like the h2 headings it replaces */
+details {
+  margin: 0 0 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+details summary {
+  cursor: pointer;
+  list-style: none;          /* hide default marker, we draw our own below */
+  padding: 10px 0;
+  color: #393939;
+  font-size: 21px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+details summary::-webkit-details-marker { display: none; }
+
+details summary::before {
+  content: "\25B8";          /* right-pointing triangle */
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #267CB9;
+  transition: transform 0.15s ease;
+}
+
+details[open] summary::before { transform: rotate(90deg); }
+
+details summary:hover { color: #267CB9; }
+
+details > *:last-child { margin-bottom: 20px; }
