@@ -16,15 +16,15 @@ My research interests are in **world models**, **causal representation learning*
 
 ## Research
 
-**Investigating Adversarial Robustness against Preprocessing used in Blackbox Face Recognition** by Roland Croft, Brian Du, **Darcy Joseph**, and Sharath Kumar — 2025 Digital Image Computing: Techniques and Applications (DICTA)
+**Investigating Adversarial Robustness against Preprocessing used in Blackbox Face Recognition** by Roland Croft, Brian Du, **Darcy Joseph**, and Sharath Kumar <br/> 2025 Digital Image Computing: Techniques and Applications (DICTA)
 
-**Terahertz Waves for Sensing Acoustic Vibrations** by Harrison Lees, **Darcy Joseph**, Yuval Yarom, and Withawat Withayachumnankul — 2024 Asia-Pacific Microwave Conference (APMC) [Invited]
+**Terahertz Waves for Sensing Acoustic Vibrations** by Harrison Lees, **Darcy Joseph**, Yuval Yarom, and Withawat Withayachumnankul <br/> 2024 Asia-Pacific Microwave Conference (APMC) [Invited]
 
 ---
 
 ## Education
 
-**University of Adelaide** (Feb 2019 - Jun 2025) [Last 2-year GPA: 6.25]
+**University of Adelaide** (Feb 2019 - Jun 2025) <br/> [Last 2-year GPA: 6.25]
 - Bachelor of Engineering (Hons), Electrical & Electronic
 - Bachelor of Mathematical and Computer Science, Computer Science
 
@@ -32,10 +32,9 @@ My research interests are in **world models**, **causal representation learning*
 
 ## Honours + Awards
 
-**Defence Industry Cooperative Program (DICP) Scholarship**
+Defence Industry Cooperative Program (DICP) Scholarship
 
-
-**University of Adelaide Principals Scholarship**
+University of Adelaide Principals Scholarship
 
 ---
 
