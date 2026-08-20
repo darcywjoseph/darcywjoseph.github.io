@@ -237,6 +237,25 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Publications */
 .pub { margin-bottom: 22px; }
+.pub.with-thumb {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.pub-thumb {
+  width: 140px;
+  height: 105px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fff;
+}
+.pub-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.pub-body { min-width: 0; }
 .pub-title { font-weight: 600; color: var(--ink); }
 .pub-authors { font-size: 14.5px; color: var(--ink-soft); margin-top: 2px; }
 .pub-authors .me { font-weight: 600; color: var(--ink); }
@@ -302,6 +321,8 @@ footer {
   .header h1 { font-size: 33px; }
   .entry-head { flex-direction: column; gap: 2px; }
   .entry-logo { grid-template-columns: 46px 1fr; gap: 14px; }
+  .pub.with-thumb { grid-template-columns: 1fr; gap: 12px; }
+  .pub-thumb { width: 100%; max-width: 200px; height: 140px; }
   .org-logo { width: 46px; }
   .entry-date { white-space: normal; }
   .tabs { gap: 0; }
@@ -351,8 +372,9 @@ footer {
   <section class="bio">
     <p>
       I'm a Machine Learning Engineer working on computer vision models applied in defence and agriculture.
-    <p>      
-    Previously I studied EE and CS at the University of Adelaide (now Adelaide University).
+    </p>
+    <p>
+      Previously I studied EE and CS at the University of Adelaide (now Adelaide University).
     </p>
     <p>
       My research interests are in <strong>world models</strong>, <strong>causal representation
@@ -391,7 +413,7 @@ footer {
         <span class="entry-title">Machine Learning Engineer &amp; Electronics Engineer</span>
         <span class="entry-date">Apr 2022 &ndash; Oct 2024</span>
       </div>
-      <div class="entry-org">Flux Robotics <span class="place">&middot; Adelaide, SA | Brisbane, QLD</span></div>
+      <div class="entry-org"><a href="https://fluxrobotics.ai" target="_blank" rel="noopener">Flux Robotics</a> <span class="place">&middot; Adelaide, SA | Brisbane, QLD</span></div>
       <ul>
         <li>Building robots for autonomous weeding in horticultural environments.</li>
       </ul>
@@ -399,19 +421,29 @@ footer {
   </div>
 
   <div class="tab-pane" id="research" role="tabpanel" tabindex="0">
-    <div class="pub">
-      <div class="pub-title">Investigating Adversarial Robustness against Preprocessing used in Blackbox Face Recognition</div>
-      <div class="pub-authors">Roland Croft, Brian Du, <span class="me">Darcy Joseph</span>, Sharath Kumar</div>
-      <div class="pub-venue">Digital Image Computing: Techniques and Applications (DICTA), 2025</div>
-      <div class="pub-links">
-        <a href="https://arxiv.org/abs/2510.17169" target="_blank" rel="noopener">arXiv</a>
+    <div class="pub with-thumb">
+      <div class="pub-thumb">
+        <img src="images/adversarial-face-recognition.jpg" alt="Low-poly illustration of a human face overlaid with a mesh of feature points" />
+      </div>
+      <div class="pub-body">
+        <div class="pub-title">Investigating Adversarial Robustness against Preprocessing used in Blackbox Face Recognition</div>
+        <div class="pub-authors">Roland Croft, Brian Du, <span class="me">Darcy Joseph</span>, Sharath Kumar</div>
+        <div class="pub-venue">Digital Image Computing: Techniques and Applications (DICTA), 2025</div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2510.17169" target="_blank" rel="noopener">arXiv</a>
+        </div>
       </div>
     </div>
 
-    <div class="pub">
-      <div class="pub-title">Terahertz Waves for Sensing Acoustic Vibrations</div>
-      <div class="pub-authors">Harrison Lees, <span class="me">Darcy Joseph</span>, Yuval Yarom, Withawat Withayachumnankul</div>
-      <div class="pub-venue">Asia-Pacific Microwave Conference (APMC), 2024 <span class="badge">INVITED</span></div>
+    <div class="pub with-thumb">
+      <div class="pub-thumb">
+        <img src="images/terahertz-speech-recovery.svg" alt="Diagram: a terahertz transceiver aims a beam at a speaker cone; the reflection carries the audio and is phase-demodulated to recover speech" />
+      </div>
+      <div class="pub-body">
+        <div class="pub-title">Terahertz Waves for Sensing Acoustic Vibrations</div>
+        <div class="pub-authors">Harrison Lees, <span class="me">Darcy Joseph</span>, Yuval Yarom, Withawat Withayachumnankul</div>
+        <div class="pub-venue">Asia-Pacific Microwave Conference (APMC), 2024 <span class="badge">INVITED</span></div>
+      </div>
     </div>
   </div>
 
@@ -423,7 +455,7 @@ footer {
           <span class="entry-title">University of Adelaide</span>
           <span class="entry-date">Feb 2019 &ndash; Jun 2025</span>
         </div>
-        <div class="entry-org">Adelaide, SA <span class="place">&middot; Last 2-year GPA: 6.25/7</span></div>
+        <div class="entry-org">Adelaide, Australia <span class="place">&middot; Last 2-year GPA: 6.25/7</span></div>
         <ul>
           <li>Bachelor of Engineering (Hons), Electrical &amp; Electronic</li>
           <li>Bachelor of Mathematical and Computer Science, Computer Science</li>
