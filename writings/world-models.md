@@ -2,11 +2,20 @@
 layout: post
 title: "World Models"
 date: 2026-03-21
-tags: [technical, ai]
+tags: [technical]
 description: "A breakdown of the term 'world model'. what they are, why they are being built, and some brief technical details on the three dominant architectures."
 ---
 
 *breakdown of the term 'world model'. what, why and some brief technical details.* 
+
+<nav class="toc" markdown="1">
+**Contents**
+
+* seed
+{:toc}
+</nav>
+
+## Background
 
 Across 2025 and into 2026, 'world models' have gathered hype within ai research and industry communities. High profile researchers Fei-Fei Li and Yann LeCun raised $1 billion for their companies, World Labs and Advanced Machine Intelligence (AMI) Labs, respectively, both focussed on developing 'world models'.  
 World models are being proposed as the next iteration in developing intelligent systems, especially as it relates to developing physical or embodied ai. 
@@ -174,6 +183,7 @@ I will likely do deeper dives into these applications and their current state of
 In summary, where LLMs are able to predict the next word, a world model is able to predict the state of the world resulting from an action. This gives world models an ability similar to how humans are able to daydream about counterfactuals, giving reasoning and planning abilities under a range of domains. 
 
 ## References
+{:.no_toc}
 
 <ol class="refs">
   <li>M. J. Kim et al., <em>OpenVLA: An Open-Source Vision-Language-Action Model</em> (2024). <a href="https://arxiv.org/abs/2406.09246">arxiv.org/abs/2406.09246</a></li>
