@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ page.title }} &middot; Darcy Joseph</title>
+<meta name="description" content="{{ page.description }}" />
+
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+<link rel="icon" href="/images/darcyCircle.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/writings/post.css" />
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+
+  <a class="back" href="/#writings">&larr; Darcy Joseph</a>
+
+  <article class="post">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {%- if page.tags and page.tags.size > 0 %}
+    <div class="post-tags">
+      {%- for tag in page.tags %}
+      <span class="tag tag--{{ tag | slugify }}">{{ tag }}</span>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+    <div class="post-meta">{{ page.date | date: "%-d %B %Y" }}</div>
+
+    {{ content }}
+  </article>
+
+  <footer>&copy; 2026 Darcy Joseph</footer>
+
+</div>
+</body>
+</html>

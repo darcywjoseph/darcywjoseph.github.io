@@ -2,6 +2,10 @@ title: Darcy Joseph
 description: Machine Learning Engineer at Swordfish Computing. World models, causal representation learning, self-supervised learning.
 url: https://darcywjoseph.github.io
 
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
 # The site is a hand-written static index.html — no Jekyll theme or layout.
 # Files below are excluded from the published output.
 exclude:

@@ -1,0 +1,179 @@
+/* Shared styles for standalone writing pages. */
+:root {
+  --bg:          #ffffff;
+  --bg-soft:     #f7f8f9;
+  --ink:         #14181d;
+  --ink-soft:    #414a55;
+  --ink-muted:   #6d7681;
+  --ink-faded:   #9aa3ad;
+  --rule:        #e4e7ea;
+  --accent:      #16697a;
+  --accent-dark: #0f4c5c;
+  --accent-tint: rgba(22, 105, 122, 0.09);
+
+  --sans:  'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --serif: 'Source Serif 4', Iowan Old Style, Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 28px 72px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color .15s ease, border-color .15s ease;
+}
+a:hover { color: var(--accent-dark); border-bottom-color: var(--accent-dark); }
+
+img { max-width: 100%; height: auto; display: block; }
+::selection { background: var(--accent); color: #fff; }
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  margin-bottom: 34px;
+}
+.back:hover { color: var(--accent-dark); border-bottom-color: transparent; }
+
+.post-title {
+  font-family: var(--serif);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: var(--ink-muted);
+  margin-bottom: 30px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.post p { margin: 0 0 20px; color: var(--ink-soft); }
+.post strong { font-weight: 600; color: var(--ink); }
+
+.post h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 38px 0 12px;
+}
+.post h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+}
+
+.post ul, .post ol { margin: 0 0 20px; padding-left: 22px; }
+.post li { margin-bottom: 6px; color: var(--ink-soft); }
+
+.post blockquote {
+  margin: 0 0 20px;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--accent);
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.post code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.post pre {
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 0 0 20px;
+}
+.post pre code { background: none; border: none; padding: 0; }
+
+.post figure { margin: 0 0 22px; }
+.post figcaption {
+  font-size: 13.5px;
+  color: var(--ink-muted);
+  margin-top: 7px;
+}
+
+.post hr { border: none; border-top: 1px solid var(--rule); margin: 34px 0; }
+
+footer {
+  margin-top: 52px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--ink-faded);
+}
+
+@media (max-width: 640px) {
+  .wrap { padding: 32px 20px 56px; }
+  body { font-size: 16px; }
+  .post-title { font-size: 29px; }
+}
+
+/* Numbered reference list */
+.post .refs { margin: 0; padding-left: 26px; font-size: 15px; }
+.post .refs li { margin-bottom: 9px; color: var(--ink-muted); line-height: 1.55; }
+.post .refs em { color: var(--ink-soft); }
+
+/* Display equations: centred, and scrollable rather than overflowing on mobile */
+.post mjx-container[display="true"] {
+  margin: 22px 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 0;
+}
+
+.post figure img { border: 1px solid var(--rule); border-radius: 6px; }
+.post figure { margin: 26px 0; }
+
+/* Topic pills under the post title */
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 14px;
+}
+.tag {
+  background: #eef3f5;
+  color: var(--ink-soft);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 3px 11px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.tag--technical { background: #dbeafe; color: #1d4ed8; }
+.tag--ai        { background: #fef3c7; color: #92400e; }

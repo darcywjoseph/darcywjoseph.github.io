@@ -159,6 +159,17 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 3px 11px;
   border-radius: 999px;
 }
+.tag--technical { background: #dbeafe; color: #1d4ed8; }
+.tag--ai        { background: #fef3c7; color: #92400e; }
+
+/* Topic pills in the writings list */
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.post-tags .tag { font-size: 12px; padding: 2px 9px; }
 
 /* ---------- Tabs ---------- */
 .tabs {
@@ -293,6 +304,32 @@ img { max-width: 100%; height: auto; display: block; }
   color: #fff;
 }
 
+/* Writings list */
+.post-link {
+  display: block;
+  margin-bottom: 22px;
+  border-bottom: none;
+}
+.post-link:hover { border-bottom-color: transparent; }
+.post-link .post-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: color .15s ease;
+}
+.post-link:hover .post-name { color: var(--accent-dark); }
+.post-link .post-date {
+  font-size: 13.5px;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  flex: none;
+}
+.post-link .post-blurb {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
 /* Miscellaneous entries */
 .misc-text { margin: 0 0 14px; color: var(--ink-soft); }
 
@@ -393,6 +430,7 @@ footer {
     <button class="tab-btn active" data-tab="experience" role="tab" aria-selected="true"  aria-controls="experience">Experience</button>
     <button class="tab-btn"        data-tab="research"   role="tab" aria-selected="false" aria-controls="research">Research</button>
     <button class="tab-btn"        data-tab="education"  role="tab" aria-selected="false" aria-controls="education">Education</button>
+    <button class="tab-btn"        data-tab="writings"   role="tab" aria-selected="false" aria-controls="writings">Writings</button>
     <button class="tab-btn"        data-tab="misc"       role="tab" aria-selected="false" aria-controls="misc">Miscellaneous</button>
   </nav>
 
@@ -462,6 +500,20 @@ footer {
         </ul>
       </div>
     </div>
+  </div>
+
+  <div class="tab-pane" id="writings" role="tabpanel" tabindex="0">
+    <a class="post-link" href="writings/world-models.html">
+      <div class="entry-head">
+        <span class="post-name">World Models</span>
+        <span class="post-date">21 Mar 2026</span>
+      </div>
+      <div class="post-blurb"> <i>breakdown of the term 'world model'. what, why and some brief technical details.</i></div>
+      <div class="post-tags">
+        <span class="tag tag--technical">technical</span>
+        <span class="tag tag--ai">ai</span>
+      </div>
+    </a>
   </div>
 
   <div class="tab-pane" id="misc" role="tabpanel" tabindex="0">
