@@ -9,7 +9,7 @@ description: "A breakdown of the term 'world model'. what they are, why they are
 *breakdown of the term 'world model'. what, why and some brief technical details.* 
 
 <nav class="toc" markdown="1">
-**Contents**
+**contents**
 
 * seed
 {:toc}
@@ -49,7 +49,7 @@ On transferring the agent into scenarios outside the model, it transferred succe
   <figcaption>The vision model, memory model and controller. From Ha and Schmidhuber [3].</figcaption>
 </figure>
 
-From this, a few high-profile different avenues to developing world models have been proposed. These are explored below. 
+From this, a few high-profile avenues to developing world models have been proposed. These are explored below. 
 
 ## Diffusion-based World Models
 
