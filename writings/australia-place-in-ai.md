@@ -8,6 +8,13 @@ description: "unqualified thoughts on australia's place in ai"
 
 *unqualified thoughts on australia's place in ai*
 
+<nav class="toc" markdown="1">
+**contents**
+
+* seed
+{:toc}
+</nav>
+
 On the 31st of March this year, Anthropic signed a 'Memorandum of Understanding' [1] with the Australian government surrounding AI safety research and supporting the National AI Plan [2]. They also signed up for $3 million AUD in partnerships with Australian research institutions; this will be in the form of Claude credits [3]. This follows on from OpenAI signing a $7 billion AUD agreement with NEXTDC to build a 550MW datacenter in Western Sydney [4], signalling a large amount of activity surrounding AI within Australia. This prompts thinking about how Australia is positioned within the global AI landscape and how we can position ourselves to benefit from, and drive, the rollout of AI across the coming decade.
 
 Reasons for wanting to be heavily involved in the rollout of AI range from economic and societal benefit to national security. Productivity growth in Australia has been nearly flat for ~ the past decade and the Productivity Commission puts the labour productivity uplift from AI at around 4.3% across the next 10 years [5], making it vital Australia tap into this and the infrastructure surrounding it. This adoption can occur without needing to build anything ourselves. However, even larger economic and societal gains will come to those who are building the frontier of AI, across the entire AI stack. Those building will develop the workforce capability, infrastructure and know-how to best capture available margin within the industry.
@@ -36,7 +43,7 @@ Alongside scaling up compute, models and datasets, the rise of AI across the las
 
 Together, these position Australia incredibly well across a few key areas in the AI stack, specifically areas that may become bottlenecks as the AI rollout occurs across the next decade. However, so far, we have not been able to turn this into a clear advantage in frontier AI capabilities or into the GDP increase that AI is supposed to bring.
 
-## What is being built in Australia off the back of our advantage
+## What is being built in Australia off the back of our advantage?
 
 The Australian Government has, alongside the National AI Plan, added up to $70 million for AI accelerator grants through the CRC program as per the May budget [18]. Regulation wise, there is no specific AI act and no dedicated regulator.
 
@@ -44,7 +51,7 @@ Within Industry, at the application or model level, Australia has a few players,
 
 Our top institutions are also still publishing novel and frontier research at the top AI conferences.
 
-## What is missing
+## What is missing?
 
 Although Australia is very well placed to capitalise at the bottom of the AI stack (minerals, land, energy) and has world class contributions to AI research, we see a middle layer, the model, and the application layer above, where we are either weak or we lack. We have no frontier model capabilities, large scale ML Engineering nor the compute to support either of these. Note we also have minimal to no semiconductor manufacturing or fabrication capabilities, this is such a complex part of the AI stack we won't consider Australia investing in this part any time soon.
 
@@ -56,7 +63,7 @@ It seems there is also an apathy toward ensuring Australia remains at the forefr
 
 There is growing political concern around the data centre build out itself. If multinationals (aka OpenAI and Anthropic) are going to use Australian land, energy and water, then Australians deserve a fair return. We risk becoming a side item in the rollout of these data centres if we don't carefully consider their development and how Australians can be ensured they, and the land, benefit. Both hyper-scaler agreements signed this year are non-binding and neither includes procurement preferences or compute access for Australian researchers or companies. We have the land, the minerals, the energy and the regulatory environment these companies need and, so far, the agreements seem more one sided.
 
-## What do we need to change
+## What do we need to change?
 
 In order to ensure Australia not only remains relevant but can drive and contribute to the AI rollout without becoming a passenger, there are a few things we need to address.
 
@@ -74,6 +81,7 @@ Focus on funding the translation of AI research through to patent generation and
 In summary, Australia has some incredible assets working in our favour, however, we have work to do and an attitude to shift if we are to avoid becoming passengers and instead want to maximise benefit to our society across the coming decades.
 
 ## References
+{:.no_toc}
 
 <ol class="refs">
   <li>Minister for Industry and Innovation, "New agreement on AI collaboration with Anthropic", 1 April 2026. <a href="https://www.minister.industry.gov.au/ministers/charlton/media-releases/new-agreement-ai-collaboration-anthropic">https://www.minister.industry.gov.au/ministers/charlton/media-releases/new-agreement-ai-collaboration-anthropic</a></li>
