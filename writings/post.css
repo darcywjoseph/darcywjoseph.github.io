@@ -146,6 +146,7 @@ footer {
 .post .refs { margin: 0; padding-left: 26px; font-size: 15px; }
 .post .refs li { margin-bottom: 9px; color: var(--ink-muted); line-height: 1.55; }
 .post .refs em { color: var(--ink-soft); }
+.post .refs a { overflow-wrap: anywhere; }
 
 /* Display equations: centred, and scrollable rather than overflowing on mobile */
 .post mjx-container[display="true"] {
@@ -177,6 +178,7 @@ footer {
 }
 .tag--technical { background: #dbeafe; color: #1d4ed8; }
 .tag--ai        { background: #fef3c7; color: #92400e; }
+.tag--opinion   { background: #fef3c7; color: #92400e; }
 
 /* Table of contents */
 .post .toc {
