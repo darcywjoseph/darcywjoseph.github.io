@@ -53,7 +53,8 @@ Our top institutions are also still publishing novel and frontier research at th
 
 ## What is missing?
 
-Although Australia is very well placed to capitalise at the bottom of the AI stack (minerals, land, energy) and has world class contributions to AI research, we see a middle layer, the model, and the application layer above, where we are either weak or we lack. We have no frontier model capabilities, large scale ML Engineering nor the compute to support either of these. Note we also have minimal to no semiconductor manufacturing or fabrication capabilities, this is such a complex part of the AI stack we won't consider Australia investing in this part any time soon.
+Although Australia is very well placed to capitalise at the bottom of the AI stack (minerals, land, energy) and has world class contributions to AI research, we see a middle layer, the model, and the application layer above, where we are either weak or we lack. We have huge mining capabilities across a copper, bauxite and iron ore, however, we export this and never build any of the derivative products nor see the economic value they provide to others doing the building. We have no frontier model capabilities, large scale ML Engineering nor the compute to support either of these. Clearly we are missing something.
+[note we also have minimal to no semiconductor manufacturing or fabrication capabilities, this is such a complex part of the AI stack we won't consider Australia investing in this part any time soon.]
 
 As the areas in which we lack are immensely capital intensive, it may be a reflection of reluctance from Australian capital providers to take on risk. As of early 2025, only 4.9% of superannuation assets were in private equity, venture capital or private credit combined. This is well below the US and North American pension funds [27]. This is exemplified in Fleet Space's biggest round being led by a pension fund from Ontario, not by Australian capital.
 
