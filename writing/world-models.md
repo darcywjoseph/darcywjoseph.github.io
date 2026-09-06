@@ -2,7 +2,7 @@
 layout: post
 title: "World Models"
 date: 2026-03-21
-tags: [technical]
+tags: [technical, ai]
 description: "A breakdown of the term 'world model'. what they are, why they are being built, and some brief technical details on the three dominant architectures."
 ---
 

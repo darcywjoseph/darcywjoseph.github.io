@@ -43,7 +43,7 @@
       {%- endfor %}
     </div>
     {%- endif %}
-    <div class="post-meta">{{ page.date | date: "%-d %B %Y" }}</div>
+    <div class="post-meta">{% if page.date_label %}{{ page.date_label }}{% else %}{{ page.date | date: "%-d %B %Y" }}{% endif %}</div>
 
     {{ content }}
   </article>

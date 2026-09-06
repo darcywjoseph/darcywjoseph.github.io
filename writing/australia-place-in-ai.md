@@ -2,7 +2,7 @@
 layout: post
 title: "Australia's Place in AI"
 date: 2026-05-16
-tags: [opinion]
+tags: [opinion, ai]
 description: "unqualified thoughts on australia's place in ai"
 ---
 
